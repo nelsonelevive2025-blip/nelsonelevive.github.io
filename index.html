@@ -1,67 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Meu Primeiro Site</title>
+    <meta charset="UTF-8">
+    <title>Versículo do Dia</title>
+
     <style>
         body {
             background-color: #111;
             color: white;
-            font-family: Arial, sans-serif;
             text-align: center;
-            padding-top: 100px;
+            font-family: Arial, sans-serif;
+            margin-top: 100px;
         }
 
         h1 {
-            color: #00ffcc;
+            color: #00ffd5;
         }
 
         button {
-            background-color: #00ffcc;
+            background-color: #00ffd5;
             border: none;
             padding: 10px 20px;
-            font-size: 16px;
+            margin-top: 15px;
             cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
         }
 
         button:hover {
-            background-color: #00ccaa;
+            opacity: 0.8;
+        }
+
+        #versiculo {
+            color: crimson;
+            margin-top: 20px;
+            font-size: 18px;
         }
     </style>
 </head>
-<body>
 
-    <h1>Nelson Dev 🚀</h1>
-    <p>Esse é meu primeiro site criado pelo celular!</p>
-
-    <button onclick="alert('Jesus Nao muda! 😎')">
-        Clique Aqui
-    </button>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Versículo</title>
-</head>
 <body>
 
     <h1>Versículo do Dia</h1>
 
-    <button onclick="mostrarVersiculo()">
-        Clique aqui
-    </button>
+    <button onclick="mostrarVersiculo()">Clique aqui</button>
 
-    <p id="texto"></p>
+    <p id="versiculo"></p>
 
     <script>
         function mostrarVersiculo() {
-            document.getElementById("texto").innerText =
-            "Salmos 51:10 ARA
-[10] Cria em mim, ó Deus, um coração puro e renova dentro de mim um espírito inabalável.
-
-https://bible.com/bible/1608/psa.51.10.ARA ";
+            document.getElementById("versiculo").innerText =
+            "Salmos 51:10 (ARA) - Cria em mim, ó Deus, um coração puro e renova dentro de mim um espírito inabalável.";
         }
     </script>
 
 </body>
 </html>
-
